@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Planej Secot - cronograma</title>
+
+    <style>
+      body {
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="schedule">
+      <br/>___|_setemb_|_outubr_|_novemb_|_dezemb_|_janeir_|_fevere_|_marco__|_abril__|_maio___|
+      <br/>-->|--------|--------|-_-_-_-_|-_-_-_-_|--------|--------|--------|--------|--------|-->
+      <br/>___'________'________'______________________'___'________'________'
+      <br/>___'________'________'______________________'___'________'________'
+      <br/>___início_do_planejamento___________________artes_definidas_______'
+      <br/>____________'________'______________________campanha_de_marketing_'
+      <br/>____________'________'__________________________'________'________'
+      <br/>____________cartilha_'__________________________'________'________'
+      <br/>____________definir_datas_______________camisetas________fechar_patrocínio
+      <br/>____________estrut_comissão______________________________lançar_plataf_inscricao
+      <br/>_____________________'___________________________________início_da_campanha_de_mkt
+      <br/>_____________________'____________________________________________'
+      <br/>_____________________campanha_de_prospeccao_de_patroc_____________'
+      <br/>_____________________inicio_prospec_patrocinadores________________fechar/encomendar_coffee
+      <br/>
+      <br/>encaixar:
+      <br/>- campanha de prospeccao de novos membros
+      <br/>- brindes
+      <br/>- escolha dos temas
+
+    </div>
+    <script type="text/javascript">
+      function ready(fn) {
+        if (document.readyState != 'loading'){
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+      ready(function(){
+        s = document.getElementsByClassName('schedule')[0].innerHTML;
+        for (var i = 0; i < s.length; i++) {
+          s = s.replace('_', '&nbsp;')
+        }
+        document.getElementsByClassName('schedule')[0].innerHTML = s;
+      })
+
+
+    </script>
+  </body>
+</html>
